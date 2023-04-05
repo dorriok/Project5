@@ -1,4 +1,4 @@
-title {
+.title {
     position: relative;
     font-display: center;
     padding-top: 50px;
@@ -11,6 +11,14 @@ title {
     text-align: center;
     color: #DEDEDE;
     }
+
+     
+      
+      
+      
+      
+      
+    
     
     .volume {
         
@@ -29,23 +37,123 @@ title {
     
     }
     
+    .slider {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 50px;
+
+    }
     
+    @import url(https://fonts.googleapis.com/css?family=Raleway:500);
+
+    $primary-color: #2ecc71;
     
+    body {
+        background: #2a2a2a;
+        font-family: Raleway;
+    }
+        
+    h1 {
+        text-align: center;
+        font-size: 34px;
+        padding-top: 40px;
+        color: #FFF;
+    }
+        
+    p {
+        color: #999;
+        text-align: center;
+        font-size: 15px;
+        
+        a {
+            color: $primary-color;
+            text-decoration: none;
+            padding: 1px 2px 0px 2px;
+            border-bottom: 2px solid rgba(0, 0, 0, .0);
+            transition: all .1s ease;
+            
+            &:hover {
+                padding: 1px 2px 1px 2px;
+                border-bottom: 2px solid #555;
+            }
+        }
+    }
     
-    position: absolute;
-    width: 988px;
-    height: 71px;
-    left: 226px;
-    top: 422px;
+    #player {
+        width: 350px;
+        height: 50px;
+        position: relative;
+        margin: 0 auto;
+        top: 80px;
+        
+        i {
+            position: absolute;
+            margin-top: -6px;
+            color: #666;
+        }
+        
+        i.fa-volume-down {
+            margin-left: -8px;
+        }
+        
+        i.fa-volume-up {
+            margin-right: -8px;
+            right: 0;
+        }
+    }
     
-    font-family: 'Space Mono';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 53px;
-    text-align: center;
+    #volume {
+        position: absolute;
+        left: 24px;
+        margin: 0 auto;
+        height: 5px;
+        width: 300px;
+        background: #555;
+        border-radius: 15px;
+        
+        .ui-slider-range-min {
+            height: 5px;
+            width: 300px;
+            position: absolute;
+            background: $primary-color;
+            border: none;
+            border-radius: 10px;
+          outline: none;
+        }
+        
+        .ui-slider-handle {
+            width: 20px;
+          height: 20px;
+            border-radius: 20px;
+          background: #FFF;
+          position: absolute;
+          margin-left: -8px;
+          margin-top: -8px;
+          cursor: pointer;
+          outline: none;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
-    color: #DEDEDE;
     
     
     .csstransforms .cn-wrapper {
