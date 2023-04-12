@@ -1,9 +1,8 @@
 
 
+
 var links = [{label: 'Cockroach', bg: '#c0392b'}, 
-             {label: 'Raccoon', bg: '#16a085'}, 
              {label: 'Mosquito', bg: '#8e44ad'}, 
-             {label: 'Wolf', bg: '#27ae60'}, 
              {label: 'Spider', bg: '#f39c12'}, 
              {label: 'Centipede ', bg: '#2980b9'}];
 var windowHeight = window.innerHeight;
@@ -23,13 +22,14 @@ addLinks();
 styleLinks();
 
 function styleCircle() {
-  circle.style.border= borderSize+'px solid #fff';
-  circle.style.width = radius*2+'px';
-  circle.style.height = radius*2+'px';
-  circle.style.borderRadius = radius+'px';
-  circle.style.position = 'absolute';
-  circle.style.top = '-'+radius*0.2+'px';
-  circle.style.left = radius*-1+'px';
+  circle.style.border = borderSize+'px solid #fff';
+  circle.style.width = radius*1.5+'px';
+  circle.style.height = radius*1.5+'px';  // set height to be the same as width
+  circle.style.borderRadius = '50%';   // use border-radius to create a perfect circle
+  circle.style.position = 'relative';
+  circle.style.bottom = '-'+(radius-200)+'px';  // move the circle up by 50 pixels
+  circle.style.left = '50%';  // center the circle horizontally
+  circle.style.transform = 'translateX(-50%)';  // adjust for centering
 }
 
 function addCircle() {
