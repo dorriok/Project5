@@ -5,7 +5,7 @@ var links = [{label: 'Cockroach', bg: '#c0392b'},
              {label: 'Mosquito', bg: '#8e44ad'}, 
              {label: 'Wolf', bg: '#27ae60'}, 
              {label: 'Spider', bg: '#f39c12'}, 
-             {label: 'Centipede', bg: '#2980b9'}];
+             {label: 'Centipede ', bg: '#2980b9'}];
 var windowHeight = window.innerHeight;
 if(windowHeight === 0) windowHeight = 238;
 var radius = windowHeight*0.6,
