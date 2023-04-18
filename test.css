@@ -30,6 +30,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   -webkit-backface-visibility: hidden;
+  overflow-y: hidden;
 
 }
 
